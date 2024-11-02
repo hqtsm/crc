@@ -84,9 +84,25 @@ jobs:
         with:
           node-version: 22.11.0
 
+      - name: Artifact prod
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-prod
+          path: |
+            npm
+            !npm/node_modules
+
       - name: Check Publish
         working-directory: npm
         run: npm publish --dry-run
 
       - name: Build npm dev
         run: deno task npm dev
+
+      - name: Artifact dev
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-dev
+          path: |
+            npm
+            !npm/node_modules
