@@ -175,7 +175,7 @@
 		"lint": "deno lint --fix",
 		"linted": "deno lint",
 		"test": "deno test --doc --parallel --shuffle --trace-leaks --coverage --clean",
-		"publishable": "deno publish --dry-run",
-		"docs": "deno doc --html mod.ts"
+		"docs": "deno doc --html mod.ts",
+		"publishable": "deno publish --dry-run"
 	}
 }
