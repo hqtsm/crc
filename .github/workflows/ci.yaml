@@ -76,7 +76,7 @@ jobs:
         with:
           deno-version: 2.0.4
 
-      - name: npm
+      - name: npm prod
         run: deno task npm prod
 
       - name: Node
@@ -84,5 +84,5 @@ jobs:
         with:
           node-version: 22.11.0
 
-      - name: npm
+      - name: npm dev
         run: deno task npm dev
