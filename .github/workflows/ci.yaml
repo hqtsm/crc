@@ -145,6 +145,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: npm-dev
+          path: npm
 
       - name: Install
         working-directory: npm
