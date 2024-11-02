@@ -3,10 +3,12 @@
 import { crc } from '../crc.ts';
 
 if (Deno.args.length !== 8 || !/^[fs]$/.test(Deno.args[6])) {
-	throw new Error(
+	console.error(
 		'Args: size poly reflectIn xorIn reflectOut xorOut f|s file|str',
 	);
+	Deno.exit(1);
 }
+
 const [size, poly, reflectIn, xorIn, reflectOut, xorOut, fs, fos] = Deno.args;
 const crcN = crc(
 	BigInt(size),

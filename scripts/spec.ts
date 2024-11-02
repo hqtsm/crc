@@ -42,8 +42,10 @@ export function* coverage(): Generator<{
 }
 
 if (Deno.args.length !== 2 || !/^[fs]$/.test(Deno.args[0])) {
-	throw new Error('Args: f|s file_or_string');
+	console.error('Args: f|s file_or_string');
+	Deno.exit(1);
 }
+
 const [fs, fos] = Deno.args;
 const dec = new TextDecoder();
 console.log('export default `');
