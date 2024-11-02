@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deno
+      - name: Setup Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: ${{ matrix.config.deno-version }}
@@ -45,7 +45,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deno
+      - name: Setup Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: 2.0.4
@@ -71,18 +71,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deno
+      - name: Setup Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: 2.0.4
 
-      - name: npm prod
+      - name: Build npm prod
         run: deno task npm prod
 
-      - name: Node
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22.11.0
 
-      - name: npm dev
+      - name: Check Publish
+        working-directory: npm
+        run: npm publish --dry-run
+
+      - name: Build npm dev
         run: deno task npm dev
