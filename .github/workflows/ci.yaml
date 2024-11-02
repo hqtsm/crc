@@ -29,5 +29,9 @@ jobs:
         with:
           deno-version: ${{ matrix.config.deno-version }}
 
+      - name: Legacy
+        if: startsWith(matrix.config.deno-version, '1.')
+        run: rm deno.lock
+
       - name: Test
         run: deno task test
