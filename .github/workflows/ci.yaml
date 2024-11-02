@@ -35,3 +35,29 @@ jobs:
 
       - name: Test
         run: deno task test
+
+  check:
+    name: Check
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: 2.0.4
+
+      - name: Docs
+        run: deno task docs
+
+      - name: Linted
+        run: deno task linted
+
+      - name: Formatted
+        run: deno task formatted
+
+      - name: Publishable
+        run: deno task publishable

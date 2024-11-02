@@ -178,12 +178,12 @@
 		]
 	},
 	"tasks": {
-		"format": "deno fmt",
-		"formatted": "deno fmt --check",
-		"lint": "deno lint --fix",
-		"linted": "deno lint",
 		"test": "deno test --doc --parallel --shuffle --trace-leaks --coverage --clean",
 		"docs": "deno doc --html mod.ts",
+		"lint": "deno lint --fix",
+		"linted": "deno lint",
+		"format": "deno fmt",
+		"formatted": "deno fmt --check",
 		"publishable": "deno publish --dry-run --allow-dirty"
 	}
 }
