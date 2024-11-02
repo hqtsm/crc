@@ -119,6 +119,12 @@
 		"./crc-64/xz": "./crc-64/xz.ts",
 		"./crc-82/darc": "./crc-82/darc.ts"
 	},
+	"exclude": [
+		".*",
+		"coverage",
+		"docs",
+		"vendor"
+	],
 	"imports": {
 		"@std/assert": "jsr:@std/assert@^1.0.7"
 	},
