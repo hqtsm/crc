@@ -72,8 +72,38 @@ jobs:
       - name: Publishable
         run: deno task publishable
 
-  npm:
-    name: npm
+  npm-dev:
+    name: npm dev
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: 2.0.4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.11.0
+
+      - name: Build npm dev
+        run: deno task npm dev
+
+      - name: Artifact npm dev
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-dev
+          path: |
+            npm
+            !npm/node_modules
+
+  npm-prod:
+    name: npm prod
 
     runs-on: ubuntu-latest
 
@@ -89,12 +119,7 @@ jobs:
       - name: Build npm prod
         run: deno task npm prod
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22.11.0
-
-      - name: Artifact prod
+      - name: Artifact npm prod
         uses: actions/upload-artifact@v4
         with:
           name: npm-prod
@@ -102,20 +127,14 @@ jobs:
             npm
             !npm/node_modules
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.11.0
+
       - name: Check Publish
         working-directory: npm
         run: npm publish --dry-run
-
-      - name: Build npm dev
-        run: deno task npm dev
-
-      - name: Artifact dev
-        uses: actions/upload-artifact@v4
-        with:
-          name: npm-dev
-          path: |
-            npm
-            !npm/node_modules
 
   node:
     strategy:
@@ -128,7 +147,7 @@ jobs:
 
     name: Node ${{ matrix.node-version }}
 
-    needs: npm
+    needs: npm-dev
 
     runs-on: ubuntu-latest
 
