@@ -53,4 +53,4 @@ console.log(crc.toString(16)); // 995dc9bbdf1939fa
 
 Thanks to pycrc for the inspiration and validation checking.
 
-Thanks to CRC RevEng for documenting the different digests.
+Thanks to CRC RevEng for cataloging the different digests.
