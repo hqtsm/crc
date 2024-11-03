@@ -1,6 +1,6 @@
 # HQTSM: CRC
 
-CRC functions with a parameterized backend optimized for both speed and size
+CRC functions with a parameterized engine optimized for both speed and size
 
 # Features
 
