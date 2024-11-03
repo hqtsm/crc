@@ -10,10 +10,13 @@ if (Deno.args.length !== 1 || !/^(dev|prod)$/.test(Deno.args[0])) {
 }
 
 const [env] = Deno.args;
+
 const GITHUB_REPOSITORY = Deno.env.get('GITHUB_REPOSITORY');
-const [description] = (await Deno.readTextFile('README.md'))
-	.split(/[\r\n]+/)
-	.filter((s) => /^\w/.test(s));
+const readme = (await Deno.readTextFile('README.md')).split(/[\r\n]+/);
+const [description] = readme.filter((s) => /^\w/.test(s));
+const keywords = readme.map((s) => s.match(/^\!\[(.*)\]\((.*)\)/))
+	.filter((m) => m && m[2].startsWith('https://img.shields.io/badge/'))
+	.map((m) => m![1]);
 
 await emptyDir('./npm');
 await build({
@@ -29,6 +32,7 @@ await build({
 		name: denoJson.name,
 		version: denoJson.version,
 		description,
+		keywords,
 		license: denoJson.license,
 		sideEffects: false,
 		...(env !== 'prod' ? { private: true } : {}),
