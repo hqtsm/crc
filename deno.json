@@ -187,6 +187,7 @@
 		"format": "deno fmt",
 		"formatted": "deno fmt --check",
 		"publishable": "deno publish --dry-run --allow-dirty",
+		"version": "deno run --allow-read --allow-write ./scripts/version.ts",
 		"npm": "deno run --allow-env --allow-net --allow-read --allow-write --allow-run ./scripts/npm.ts"
 	}
 }
