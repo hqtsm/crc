@@ -30,7 +30,7 @@ jobs:
         run: deno task version "${GITHUB_REF#refs/tags/v}"
 
       - name: Publish
-        run: deno publish --allow-dirty --dry-run
+        run: deno publish --allow-dirty
 
   npm:
     name: NPM
@@ -63,6 +63,6 @@ jobs:
 
       - name: Publish
         working-directory: npm
-        run: npm publish --provenance --access public --dry-run
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
