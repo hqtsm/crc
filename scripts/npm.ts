@@ -12,19 +12,23 @@ if (Deno.args.length !== 1 || !/^(dev|prod)$/.test(Deno.args[0])) {
 const [env] = Deno.args;
 
 const GITHUB_REPOSITORY = Deno.env.get('GITHUB_REPOSITORY');
+
 const readme = (await Deno.readTextFile('README.md')).split(/[\r\n]+/);
 const [description] = readme.filter((s) => /^\w/.test(s));
-const keywords = readme.map((s) => s.match(/^\!\[(.*)\]\((.*)\)/))
+const keywords = readme.map((s) => s.match(/^\!\[(.*)\]\((.*)\)$/))
 	.filter((m) => m && m[2].startsWith('https://img.shields.io/badge/'))
 	.map((m) => m![1]);
 
-await emptyDir('./npm');
+const outDir = './npm';
+
+await emptyDir(outDir);
+
 await build({
 	test: env === 'dev',
 	importMap: 'deno.json',
 	entryPoints: Object.entries(denoJson.exports)
 		.map(([name, path]) => name === '.' ? path : { name, path }),
-	outDir: './npm',
+	outDir,
 	shims: {
 		deno: env === 'dev' ? 'dev' : false,
 	},
