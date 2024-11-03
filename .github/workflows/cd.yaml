@@ -55,11 +55,11 @@ jobs:
         with:
           node-version: 22.11.0
 
-      - name: Build NPM prod
-        run: deno task npm prod
-
       - name: Version
         run: deno task version "${GITHUB_REF#refs/tags/v}"
+
+      - name: Build NPM prod
+        run: deno task npm prod
 
       - name: Publish
         working-directory: npm
