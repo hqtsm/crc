@@ -1,5 +1,9 @@
 # HQTSM: CRC
 
+[![JSR](https://jsr.io/badges/@hqtsm/crc)](https://jsr.io/@hqtsm/crc)
+[![npm](https://img.shields.io/npm/v/@hqtsm/crc.svg)](https://npmjs.com/package/@hqtsm/crc)
+[![CI](https://github.com/hqtsm/crc/actions/workflows/ci.yaml/badge.svg)](https://github.com/hqtsm/crc/actions/workflows/ci.yaml)
+
 CRC functions with a parameterized engine optimized for both speed and size
 
 # Features
