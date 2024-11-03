@@ -185,7 +185,6 @@ export function crc<T extends number | bigint>(
 		}
 		return t as T[];
 	};
-	let i = refi ? reflect(xori, size) : xori;
 	return {
 		size,
 		poly,
@@ -195,7 +194,7 @@ export function crc<T extends number | bigint>(
 		xoro,
 		reflect,
 		table,
-		init: () => i,
+		init: refi ? () => reflect(xori, size) : () => xori,
 		update: refi
 			? (
 				n
