@@ -116,6 +116,11 @@ jobs:
         with:
           deno-version: 2.0.4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.11.0
+
       - name: Build NPM prod
         run: deno task npm prod
 
@@ -126,11 +131,6 @@ jobs:
           path: |
             npm
             !npm/node_modules
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22.11.0
 
       - name: Check Publish
         working-directory: npm
