@@ -91,10 +91,10 @@ jobs:
         with:
           node-version: 22.11.0
 
-      - name: Build NPM dev
+      - name: Build NPM
         run: deno task npm dev
 
-      - name: Artifact NPM dev
+      - name: Artifact NPM
         uses: actions/upload-artifact@v4
         with:
           name: npm-dev
@@ -121,10 +121,10 @@ jobs:
         with:
           node-version: 22.11.0
 
-      - name: Build NPM prod
+      - name: Build NPM
         run: deno task npm prod
 
-      - name: Artifact NPM prod
+      - name: Artifact NPM
         uses: actions/upload-artifact@v4
         with:
           name: npm-prod
@@ -160,7 +160,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Artifact NPM dev
+      - name: Artifact NPM
         uses: actions/download-artifact@v4
         with:
           name: npm-dev
@@ -196,7 +196,7 @@ jobs:
         with:
           bun-version: ${{ matrix.bun-version }}
 
-      - name: Artifact NPM dev
+      - name: Artifact NPM
         uses: actions/download-artifact@v4
         with:
           name: npm-dev
