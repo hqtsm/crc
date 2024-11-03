@@ -26,8 +26,11 @@ jobs:
         with:
           deno-version: 2.0.4
 
+      - name: Version
+        run: deno task version "${GITHUB_REF#refs/tags/v}"
+
       - name: Publish
-        run: deno publish --dry-run
+        run: deno publish --allow-dirty --dry-run
 
   npm:
     name: NPM
@@ -54,6 +57,9 @@ jobs:
 
       - name: Build NPM prod
         run: deno task npm prod
+
+      - name: Version
+        run: deno task version "${GITHUB_REF#refs/tags/v}"
 
       - name: Publish
         working-directory: npm
