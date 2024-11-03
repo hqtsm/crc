@@ -1,4 +1,4 @@
-name: ci
+name: CI
 
 on:
   push:
@@ -73,7 +73,7 @@ jobs:
         run: deno task publishable
 
   npm-dev:
-    name: npm dev
+    name: NPM dev
 
     runs-on: ubuntu-latest
 
@@ -91,10 +91,10 @@ jobs:
         with:
           node-version: 22.11.0
 
-      - name: Build npm dev
+      - name: Build NPM dev
         run: deno task npm dev
 
-      - name: Artifact npm dev
+      - name: Artifact NPM dev
         uses: actions/upload-artifact@v4
         with:
           name: npm-dev
@@ -103,7 +103,7 @@ jobs:
             !npm/node_modules
 
   npm-prod:
-    name: npm prod
+    name: NPM prod
 
     runs-on: ubuntu-latest
 
@@ -116,10 +116,10 @@ jobs:
         with:
           deno-version: 2.0.4
 
-      - name: Build npm prod
+      - name: Build NPM prod
         run: deno task npm prod
 
-      - name: Artifact npm prod
+      - name: Artifact NPM prod
         uses: actions/upload-artifact@v4
         with:
           name: npm-prod
@@ -160,7 +160,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Artifact npm dev
+      - name: Artifact NPM dev
         uses: actions/download-artifact@v4
         with:
           name: npm-dev
@@ -196,7 +196,7 @@ jobs:
         with:
           bun-version: ${{ matrix.bun-version }}
 
-      - name: Artifact npm dev
+      - name: Artifact NPM dev
         uses: actions/download-artifact@v4
         with:
           name: npm-dev
