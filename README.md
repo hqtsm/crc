@@ -13,12 +13,12 @@ CRC functions with a parameterized backend optimized for both speed and size
   - Tables generated on first use
   - Minimal additional overhead to each variant
   - Individually importable algorithms
-- Over 100 known digests provided, plus the option of configuring your own
+- 100+ known digests provided, plus the option of configuring your own
 - Streamable interface, just call update for each chunk
 - Number for small digests, 32-bit or less
 - BigInt for larger digests
 - Digest values always an unsigned integer
-- Supports 8-bit typed arrays, regular arrays, and even array-like objects
+- Supports 8-bit typed arrays, regular arrays, and array-like objects
 - Pure methods, can be assigned directly to variables as needed
 
 # Usage
