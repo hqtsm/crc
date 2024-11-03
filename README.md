@@ -6,18 +6,18 @@
 
 CRC functions with a parameterized engine optimized for both speed and size
 
-![crc](https://img.shields.io/badge/crc-ccc)
-![digest](https://img.shields.io/badge/digest-ccc)
-![checksum](https://img.shields.io/badge/checksum-ccc)
-![hash](https://img.shields.io/badge/hash-ccc)
-![typescript](https://img.shields.io/badge/typescript-ccc)
-![esm](https://img.shields.io/badge/esm-ccc)
-![streamable](https://img.shields.io/badge/streamable-ccc)
-![crc-8](https://img.shields.io/badge/crc--8-ccc)
-![crc-16](https://img.shields.io/badge/crc--16-ccc)
-![crc-24](https://img.shields.io/badge/crc--24-ccc)
-![crc-32](https://img.shields.io/badge/crc--32-ccc)
-![crc-64](https://img.shields.io/badge/crc--64-ccc)
+![crc](https://img.shields.io/badge/crc-eee)
+![digest](https://img.shields.io/badge/digest-eee)
+![checksum](https://img.shields.io/badge/checksum-eee)
+![hash](https://img.shields.io/badge/hash-eee)
+![typescript](https://img.shields.io/badge/typescript-eee)
+![esm](https://img.shields.io/badge/esm-eee)
+![streamable](https://img.shields.io/badge/streamable-eee)
+![crc-8](https://img.shields.io/badge/crc--8-eee)
+![crc-16](https://img.shields.io/badge/crc--16-eee)
+![crc-24](https://img.shields.io/badge/crc--24-eee)
+![crc-32](https://img.shields.io/badge/crc--32-eee)
+![crc-64](https://img.shields.io/badge/crc--64-eee)
 
 # Features
 
