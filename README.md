@@ -1,9 +1,5 @@
 # HQTSM: CRC
 
-[![JSR](https://jsr.io/badges/@hqtsm/crc)](https://jsr.io/@hqtsm/crc)
-[![npm](https://img.shields.io/npm/v/@hqtsm/crc.svg)](https://npmjs.com/package/@hqtsm/crc)
-[![CI](https://github.com/hqtsm/crc/actions/workflows/ci.yaml/badge.svg)](https://github.com/hqtsm/crc/actions/workflows/ci.yaml)
-
 CRC functions with a parameterized engine optimized for both speed and size
 
 ![crc](https://img.shields.io/badge/crc-eee)
@@ -18,6 +14,10 @@ CRC functions with a parameterized engine optimized for both speed and size
 ![crc-24](https://img.shields.io/badge/crc--24-eee)
 ![crc-32](https://img.shields.io/badge/crc--32-eee)
 ![crc-64](https://img.shields.io/badge/crc--64-eee)
+
+[![JSR](https://jsr.io/badges/@hqtsm/crc)](https://jsr.io/@hqtsm/crc)
+[![npm](https://img.shields.io/npm/v/@hqtsm/crc.svg)](https://npmjs.com/package/@hqtsm/crc)
+[![CI](https://github.com/hqtsm/crc/actions/workflows/ci.yaml/badge.svg)](https://github.com/hqtsm/crc/actions/workflows/ci.yaml)
 
 # Features
 
