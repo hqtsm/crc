@@ -1,0 +1,52 @@
+name: CD
+
+on:
+  push:
+    branches-ignore:
+      - '**'
+    tags:
+      - 'v**'
+
+jobs:
+  jsr:
+    name: JSR
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: 2.0.4
+
+      - name: Publish
+        run: deno publish --dry-run
+
+  npm:
+    name: NPM
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: 2.0.4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.11.0
+
+      - name: Build NPM prod
+        run: deno task npm prod
+
+      - name: Publish
+        working-directory: npm
+        run: npm publish --dry-run
