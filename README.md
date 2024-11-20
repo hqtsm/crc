@@ -50,7 +50,7 @@ import CRC32 from '@hqtsm/crc/crc-32/iso-hdlc';
 let crc = CRC32.init();
 crc = CRC32.update(crc, new TextEncoder().encode('123456789'));
 crc = CRC32.finalize(crc);
-console.log(crc.toString(16)); // cbf43926
+console.assert(crc.toString(16) === 'cbf43926');
 ```
 
 ## CRC-64/XZ
@@ -63,7 +63,7 @@ import CRC64 from '@hqtsm/crc/crc-64/xz';
 let crc = CRC64.init();
 crc = CRC64.update(crc, new TextEncoder().encode('123456789'));
 crc = CRC64.finalize(crc);
-console.log(crc.toString(16)); // 995dc9bbdf1939fa
+console.assert(crc.toString(16) === '995dc9bbdf1939fa');
 ```
 
 # Acknowledgements
