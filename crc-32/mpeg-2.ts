@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-32/MPEG-2
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

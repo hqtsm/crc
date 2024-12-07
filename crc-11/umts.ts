@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-11/UMTS
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

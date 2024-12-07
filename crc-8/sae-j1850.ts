@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-8/SAE-J1850
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

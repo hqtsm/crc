@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-5/EPC-C1G2
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

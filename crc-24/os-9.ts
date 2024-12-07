@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-24/OS-9
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

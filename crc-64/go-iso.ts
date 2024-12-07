@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-64/GO-ISO
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-8/DVB-S2
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

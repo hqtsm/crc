@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/CMS
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

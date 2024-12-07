@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-8/TECH-3250
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

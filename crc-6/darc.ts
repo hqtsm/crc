@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-6/DARC
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

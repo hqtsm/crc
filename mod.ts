@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC functions, types, and each algorithm.
+ */
+
 export * from './crc.ts';
 export { default as CRC_3_GSM } from './crc-3/gsm.ts';
 export { default as CRC_3_ROHC } from './crc-3/rohc.ts';

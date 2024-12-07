@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/NRSC-5
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

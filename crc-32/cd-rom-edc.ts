@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-32/CD-ROM-EDC
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

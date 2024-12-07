@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-3/ROHC
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

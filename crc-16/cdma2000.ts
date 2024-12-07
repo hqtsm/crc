@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/CDMA2000
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

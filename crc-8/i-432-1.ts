@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-8/I-432-1
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

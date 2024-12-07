@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-31/PHILIPS
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

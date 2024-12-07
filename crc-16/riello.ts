@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/RIELLO
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

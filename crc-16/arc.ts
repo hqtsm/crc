@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/ARC
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

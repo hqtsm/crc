@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/MODBUS
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-32/BASE91-D
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

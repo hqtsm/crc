@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-8/MIFARE-MAD
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

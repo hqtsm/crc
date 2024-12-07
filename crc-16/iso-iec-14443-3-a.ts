@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/ISO-IEC-14443-3-A
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

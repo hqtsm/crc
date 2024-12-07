@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-64/REDIS
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

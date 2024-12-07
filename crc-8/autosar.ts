@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-8/AUTOSAR
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

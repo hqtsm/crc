@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-13/BBC
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

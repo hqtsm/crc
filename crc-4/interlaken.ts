@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-4/INTERLAKEN
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

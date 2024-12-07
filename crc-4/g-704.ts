@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-4/G-704
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

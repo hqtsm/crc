@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-12/DECT
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

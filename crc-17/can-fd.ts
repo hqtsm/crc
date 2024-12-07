@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-17/CAN-FD
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

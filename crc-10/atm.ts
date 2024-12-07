@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-10/ATM
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

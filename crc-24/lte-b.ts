@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-24/LTE-B
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

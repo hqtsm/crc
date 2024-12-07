@@ -1,4 +1,10 @@
 /**
+ * @module
+ *
+ * The core CRC functions and types.
+ */
+
+/**
  * An array-like object of 8-bit numbers.
  */
 export type CrcData = {

@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-7/MMC
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

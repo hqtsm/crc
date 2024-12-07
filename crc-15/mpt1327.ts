@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-15/MPT1327
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

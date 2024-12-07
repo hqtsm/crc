@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-24/OPENPGP
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

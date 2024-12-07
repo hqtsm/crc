@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/USB
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

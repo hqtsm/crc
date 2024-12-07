@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-32/BZIP2
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

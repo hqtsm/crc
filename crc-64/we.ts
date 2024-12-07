@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-64/WE
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

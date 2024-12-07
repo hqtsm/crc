@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/T10-DIF
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

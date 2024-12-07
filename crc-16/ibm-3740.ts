@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-16/IBM-3740
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

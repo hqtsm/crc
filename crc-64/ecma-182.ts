@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-64/ECMA-182
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

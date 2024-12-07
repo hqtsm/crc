@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-32/XFER
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**

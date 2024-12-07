@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * CRC-40/GSM
+ */
+
 import { crc, type CrcInterface } from '../crc.ts';
 
 /**
