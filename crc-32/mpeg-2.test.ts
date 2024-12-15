@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_MPEG_2 from './mpeg-2.ts';
 
 const table = `

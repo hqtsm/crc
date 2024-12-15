@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_12_UMTS from './umts.ts';
 
 const table = `

@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_64_XZ from './xz.ts';
 
 const table = `

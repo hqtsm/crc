@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_AIXM from './aixm.ts';
 
 Deno.test('123456789', () => {

@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_T10_DIF from './t10-dif.ts';
 
 Deno.test('123456789', () => {

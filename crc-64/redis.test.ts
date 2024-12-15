@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_64_REDIS from './redis.ts';
 
 Deno.test('123456789', () => {

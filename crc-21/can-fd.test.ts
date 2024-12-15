@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_21_CAN_FD from './can-fd.ts';
 
 Deno.test('123456789', () => {

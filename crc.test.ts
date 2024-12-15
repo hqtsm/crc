@@ -1,9 +1,7 @@
 import { assertEquals } from '@std/assert';
-
 import { crc } from './crc.ts';
-
-import _123456789 from './spec/123456789.ts';
 import _00ff from './spec/00ff.ts';
+import _123456789 from './spec/123456789.ts';
 
 function* parseCoverage(
 	s: string,

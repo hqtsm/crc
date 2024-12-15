@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_6_CDMA2000_B from './cdma2000-b.ts';
 
 Deno.test('123456789', () => {

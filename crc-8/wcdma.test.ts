@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_WCDMA from './wcdma.ts';
 
 Deno.test('123456789', () => {

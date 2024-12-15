@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_5_USB from './usb.ts';
 
 const table = `

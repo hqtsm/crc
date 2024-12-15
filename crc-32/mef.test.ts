@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_MEF from './mef.ts';
 
 Deno.test('123456789', () => {

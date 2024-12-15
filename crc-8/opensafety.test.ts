@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_OPENSAFETY from './opensafety.ts';
 
 Deno.test('123456789', () => {

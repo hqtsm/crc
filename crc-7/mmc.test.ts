@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_7_MMC from './mmc.ts';
 
 Deno.test('123456789', () => {

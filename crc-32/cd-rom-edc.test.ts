@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_CD_ROM_EDC from './cd-rom-edc.ts';
 
 Deno.test('123456789', () => {

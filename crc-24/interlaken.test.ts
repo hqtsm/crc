@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_24_INTERLAKEN from './interlaken.ts';
 
 Deno.test('123456789', () => {

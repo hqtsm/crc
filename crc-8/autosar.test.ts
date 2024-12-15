@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_AUTOSAR from './autosar.ts';
 
 Deno.test('123456789', () => {

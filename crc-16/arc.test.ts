@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_ARC from './arc.ts';
 
 const table = `

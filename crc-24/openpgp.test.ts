@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_24_OPENPGP from './openpgp.ts';
 
 const table = `

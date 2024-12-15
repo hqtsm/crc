@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_64_GO_ISO from './go-iso.ts';
 
 const table = `

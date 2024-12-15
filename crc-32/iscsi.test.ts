@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_ICSCI from './iscsi.ts';
 
 const table = `

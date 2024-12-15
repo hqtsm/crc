@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_TMS37157 from './tms37157.ts';
 
 Deno.test('123456789', () => {

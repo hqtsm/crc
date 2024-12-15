@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_7_ROHC from './rohc.ts';
 
 Deno.test('123456789', () => {

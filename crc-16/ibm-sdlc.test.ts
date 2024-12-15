@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_IBM_SDLC from './ibm-sdlc.ts';
 
 const table = `

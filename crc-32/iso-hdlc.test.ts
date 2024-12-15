@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_ISO_HDLC from './iso-hdlc.ts';
 
 const table = `

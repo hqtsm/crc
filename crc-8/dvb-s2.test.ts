@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_DVB_S2 from './dvb-s2.ts';
 
 Deno.test('123456789', () => {

@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_11_FLEXRAY from './flexray.ts';
 
 Deno.test('123456789', () => {

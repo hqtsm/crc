@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_MAXIM_DOW from './maxim-dow.ts';
 
 const table = `

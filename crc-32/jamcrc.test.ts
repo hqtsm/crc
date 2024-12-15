@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_JAMCRC from './jamcrc.ts';
 
 const table = `

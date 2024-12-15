@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_HITAG from './hitag.ts';
 
 Deno.test('123456789', () => {

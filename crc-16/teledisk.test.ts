@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_TELEDISK from './teledisk.ts';
 
 Deno.test('123456789', () => {

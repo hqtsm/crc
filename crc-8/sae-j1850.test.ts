@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_SAE_J1850 from './sae-j1850.ts';
 
 Deno.test('123456789', () => {

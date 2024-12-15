@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_ISO_IEC_14443_3_A from './iso-iec-14443-3-a.ts';
 
 Deno.test('123456789', () => {

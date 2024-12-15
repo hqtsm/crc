@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_24_BLE from './ble.ts';
 
 Deno.test('123456789', () => {

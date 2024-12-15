@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_MODBUS from './modbus.ts';
 
 const table = `

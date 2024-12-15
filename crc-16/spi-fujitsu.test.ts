@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_SPI_FUJITSU from './spi-fujitsu.ts';
 
 const table = `

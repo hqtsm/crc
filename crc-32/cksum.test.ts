@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_CKSUM from './cksum.ts';
 
 const table = `

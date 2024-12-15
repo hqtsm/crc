@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_8_SMBUS from './smbus.ts';
 
 const table = `

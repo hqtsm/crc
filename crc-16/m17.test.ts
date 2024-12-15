@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_M17 from './m17.ts';
 
 Deno.test('123456789', () => {

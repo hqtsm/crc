@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_64_ECMA_182 from './ecma-182.ts';
 
 const table = `

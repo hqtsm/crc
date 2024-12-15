@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_32_BZIP2 from './bzip2.ts';
 
 const table = `

@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_15_CAN from './can.ts';
 
 const table = `

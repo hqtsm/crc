@@ -1,5 +1,4 @@
 import { assertEquals } from '@std/assert';
-
 import CRC_16_MAXIM_DOW from './maxim-dow.ts';
 
 Deno.test('123456789', () => {
