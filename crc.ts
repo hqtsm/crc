@@ -21,12 +21,16 @@ export type CrcData = {
 
 /**
  * CRC table.
+ *
+ * @template T Number type.
+ * @returns Table.
  */
 export type CrcTable<T extends number | bigint> = () => T[];
 
 /**
  * CRC reflect.
  *
+ * @template T Number type.
  * @param data Bits to reflect.
  * @param size Number of bits.
  * @returns Reflected bits.
@@ -39,6 +43,7 @@ export type CrcReflect<T extends number | bigint> = (
 /**
  * CRC init.
  *
+ * @template T Number type.
  * @returns Initial value.
  */
 export type CrcInit<T extends number | bigint> = () => T;
@@ -46,6 +51,7 @@ export type CrcInit<T extends number | bigint> = () => T;
 /**
  * CRC update.
  *
+ * @template T Number type.
  * @param crc Current value.
  * @param data Bytes.
  * @returns Updated value.
@@ -58,6 +64,7 @@ export type CrcUpdate<T extends number | bigint> = (
 /**
  * CRC finalize.
  *
+ * @template T Number type.
  * @param crc Value to finalize.
  * @returns Finalized CRC.
  */
@@ -65,6 +72,8 @@ export type CrcFinalize<T extends number | bigint> = (crc: T) => T;
 
 /**
  * CRC interface.
+ *
+ * @template T Number type.
  */
 export type CrcInterface<T extends number | bigint> = {
 	/**
@@ -126,12 +135,14 @@ export type CrcInterface<T extends number | bigint> = {
 /**
  * CRC factory.
  *
+ * @template T Number type.
  * @param size Bit size.
  * @param poly Polynomial.
  * @param refi Reflect input.
  * @param xori XOR input.
  * @param refo Reflect output.
  * @param xoro XOR output.
+ * @returns CRC interface.
  */
 export function crc<T extends number>(
 	size: number,
@@ -141,6 +152,19 @@ export function crc<T extends number>(
 	refo: boolean,
 	xoro: number,
 ): CrcInterface<number>;
+
+/**
+ * CRC factory.
+ *
+ * @template T Number type.
+ * @param size Bit size.
+ * @param poly Polynomial.
+ * @param refi Reflect input.
+ * @param xori XOR input.
+ * @param refo Reflect output.
+ * @param xoro XOR output.
+ * @returns CRC interface.
+ */
 export function crc<T extends bigint>(
 	size: bigint,
 	poly: bigint,
@@ -149,6 +173,19 @@ export function crc<T extends bigint>(
 	refo: boolean,
 	xoro: bigint,
 ): CrcInterface<bigint>;
+
+/**
+ * CRC factory.
+ *
+ * @template T Number type.
+ * @param size Bit size.
+ * @param poly Polynomial.
+ * @param refi Reflect input.
+ * @param xori XOR input.
+ * @param refo Reflect output.
+ * @param xoro XOR output.
+ * @returns CRC interface.
+ */
 export function crc<T extends number | bigint>(
 	size: T,
 	poly: T,
