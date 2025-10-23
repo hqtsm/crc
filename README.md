@@ -31,9 +31,9 @@ CRC functions with a parameterized engine optimized for both speed and size
   - Tables generated on first use
   - Minimal additional overhead to each variant
   - Individually importable algorithms
-- 100+ known digests provided, plus the option of configuring your own
-- Streamable interface, just call update for each chunk
-- Resumable interface, state is just an number value
+- Tree shaking friendly design
+- 100+ known digests provided, plus the option of configuring custom ones
+- Streamable and resumable interface, just call update for each chunk
 - Number for small digests, 32-bit or less
 - BigInt for larger digests
 - Digest values always an unsigned integer
