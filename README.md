@@ -22,6 +22,7 @@ CRC functions with a parameterized engine optimized for both speed and size
 # Features
 
 - Pure TypeScript, run anywhere
+- Zero dependencies
 - Optimized for speed
   - Table-based algorithm
   - Minimal initialization code
@@ -32,6 +33,7 @@ CRC functions with a parameterized engine optimized for both speed and size
   - Individually importable algorithms
 - 100+ known digests provided, plus the option of configuring your own
 - Streamable interface, just call update for each chunk
+- Resumable interface, state is just an number value
 - Number for small digests, 32-bit or less
 - BigInt for larger digests
 - Digest values always an unsigned integer
