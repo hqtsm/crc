@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-32/CKSUM
  */
-export default crc(
+export const CRC_32_CKSUM = crc(
 	32,
 	0x04c11db7,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0xffffffff,
 ) as CrcInterface<number>;
+
+export default CRC_32_CKSUM;

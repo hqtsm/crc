@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-16/IBM-SDLC
  */
-export default crc(
+export const CRC_16_IBM_SDLC = crc(
 	16,
 	0x1021,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0xffff,
 ) as CrcInterface<number>;
+
+export default CRC_16_IBM_SDLC;

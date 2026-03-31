@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-17/CAN-FD
  */
-export default crc(
+export const CRC_17_CAN_FD = crc(
 	17,
 	0x1685b,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0x00000,
 ) as CrcInterface<number>;
+
+export default CRC_17_CAN_FD;

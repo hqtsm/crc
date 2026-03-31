@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-5/USB
  */
-export default crc(
+export const CRC_5_USB = crc(
 	5,
 	0x5,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0x1f,
 ) as CrcInterface<number>;
+
+export default CRC_5_USB;

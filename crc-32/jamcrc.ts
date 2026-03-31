@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-32/JAMCRC
  */
-export default crc(
+export const CRC_32_JAMCRC = crc(
 	32,
 	0x04c11db7,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0x00000000,
 ) as CrcInterface<number>;
+
+export default CRC_32_JAMCRC;

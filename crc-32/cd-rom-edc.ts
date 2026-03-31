@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-32/CD-ROM-EDC
  */
-export default crc(
+export const CRC_32_CD_ROM_EDC = crc(
 	32,
 	0x8001801b,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0x00000000,
 ) as CrcInterface<number>;
+
+export default CRC_32_CD_ROM_EDC;

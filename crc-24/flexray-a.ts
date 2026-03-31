@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-24/FLEXRAY-A
  */
-export default crc(
+export const CRC_24_FLEXRAY_A = crc(
 	24,
 	0x5d6dcb,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0x000000,
 ) as CrcInterface<number>;
+
+export default CRC_24_FLEXRAY_A;

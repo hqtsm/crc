@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-12/CDMA2000
  */
-export default crc(
+export const CRC_12_CDMA2000 = crc(
 	12,
 	0xf13,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0x000,
 ) as CrcInterface<number>;
+
+export default CRC_12_CDMA2000;

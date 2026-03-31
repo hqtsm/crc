@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-16/XMODEM
  */
-export default crc(
+export const CRC_16_XMODEM = crc(
 	16,
 	0x1021,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0x0000,
 ) as CrcInterface<number>;
+
+export default CRC_16_XMODEM;

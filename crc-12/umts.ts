@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-12/UMTS
  */
-export default crc(
+export const CRC_12_UMTS = crc(
 	12,
 	0x80f,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0x000,
 ) as CrcInterface<number>;
+
+export default CRC_12_UMTS;

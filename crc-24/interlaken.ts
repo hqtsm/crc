@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-24/INTERLAKEN
  */
-export default crc(
+export const CRC_24_INTERLAKEN = crc(
 	24,
 	0x328b63,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0xffffff,
 ) as CrcInterface<number>;
+
+export default CRC_24_INTERLAKEN;

@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-32/ISCSI
  */
-export default crc(
+export const CRC_32_ISCSI = crc(
 	32,
 	0x1edc6f41,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0xffffffff,
 ) as CrcInterface<number>;
+
+export default CRC_32_ISCSI;

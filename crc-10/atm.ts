@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-10/ATM
  */
-export default crc(
+export const CRC_10_ATM = crc(
 	10,
 	0x233,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0x000,
 ) as CrcInterface<number>;
+
+export default CRC_10_ATM;

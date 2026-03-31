@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-32/BASE91-D
  */
-export default crc(
+export const CRC_32_BASE91_D = crc(
 	32,
 	0xa833982b,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0xffffffff,
 ) as CrcInterface<number>;
+
+export default CRC_32_BASE91_D;

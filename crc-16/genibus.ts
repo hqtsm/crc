@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-16/GENIBUS
  */
-export default crc(
+export const CRC_16_GENIBUS = crc(
 	16,
 	0x1021,
 	false,
@@ -17,3 +17,5 @@ export default crc(
 	false,
 	0xffff,
 ) as CrcInterface<number>;
+
+export default CRC_16_GENIBUS;

@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-14/DARC
  */
-export default crc(
+export const CRC_14_DARC = crc(
 	14,
 	0x0805,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0x0000,
 ) as CrcInterface<number>;
+
+export default CRC_14_DARC;

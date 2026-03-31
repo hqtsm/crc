@@ -9,7 +9,7 @@ import { crc, type CrcInterface } from '../crc.ts';
 /**
  * CRC-8/BLUETOOTH
  */
-export default crc(
+export const CRC_8_BLUETOOTH = crc(
 	8,
 	0xa7,
 	true,
@@ -17,3 +17,5 @@ export default crc(
 	true,
 	0x00,
 ) as CrcInterface<number>;
+
+export default CRC_8_BLUETOOTH;
