@@ -76,5 +76,5 @@ Deno.test('123456789', () => {
 	let c = CRC_64_GO_ISO.init();
 	c = CRC_64_GO_ISO.update(c, new TextEncoder().encode('123456789'));
 	c = CRC_64_GO_ISO.finalize(c);
-	assertEquals(c, 0x46a5a9388a5beffen);
+	assertEquals(c, 0xb90956c775a41001n);
 });
